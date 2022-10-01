@@ -9,7 +9,7 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "任轲茹的基地"
 			},
 			"usingComponents": {
 				"vue-big-wheel": "../../miniprogram_npm/vue-big-wheel"
@@ -18,7 +18,7 @@
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
+		"navigationBarTitleText": "任轲茹的基地",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
 	}

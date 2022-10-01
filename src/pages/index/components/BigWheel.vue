@@ -62,8 +62,8 @@ export default {
       const borderColor = this.borderColor
       // 绘画
       const ctx = uni.createCanvasContext('lottery', this);
-      const canvasW = 400; // 画板的高度
-      const canvasH = 400; // 画板的宽度
+      const canvasW = 240 // 画板的高度
+      const canvasH = 240 // 画板的宽度
 
       // translate方法重新映射画布上的 (0,0) 位置
       ctx.translate(0, canvasH)
@@ -87,8 +87,9 @@ export default {
         const angle = index * baseAngle
         
         // 设置每个扇形区域的背景色，循环填充
-        prizeBgColorsIndex++
-        ctx.fillStyle = prizeBgColors[prizeBgColorsIndex]
+        prizeBgColorsIndex++;
+        const fillColor = prizeBgColors[prizeBgColorsIndex];
+        ctx.setFillStyle(fillColor);
         if (prizeBgColorsIndex === prizeBgColors.length - 1) {
           prizeBgColorsIndex = -1
         }

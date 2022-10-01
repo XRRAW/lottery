@@ -1,7 +1,9 @@
 <script>
 	export default {
 		onLaunch: function() {
-			console.log('App Launch')
+			uni.showShareMenu({
+				menus: ["shareAppMessage", "shareTimeline"],
+			})
 		},
 		onShow: function() {
 			console.log('App Show')

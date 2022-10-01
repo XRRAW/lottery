@@ -60,35 +60,42 @@ export default {
 		this.getActivityDetail();
 	},
 
+  onShareAppMessage() {
+    return {
+      title: '任轲茹的基地',
+      imageUrl: '../../static/rxr.jpeg',
+    }
+  },
+
   methods: {
     // 获取活动配置详情
     getActivityDetail() {
       this.prizeList = [
 				{
-          prizeName: '土狗',
-          prizePic: require('@/static/img/dog.jpg')
+          prizeName: '烤肉',
+          prizePic: 'https://img.moushikeji.com/cdnn/temp_img/page/szy/szy/awards-bbq.jpeg'
         },
-        {
-          prizeName: '边牧',
-          prizePic: require('@/static/img/dog.jpg')
+				{
+          prizeName: '肯德基',
+          prizePic: 'https://img.moushikeji.com/cdnn/temp_img/page/szy/szy/awards-kfc.jpeg'
         },
-        {
-          prizeName: '哈士奇',
-          prizePic: require('@/static/img/dog-2.jpg')
+				{
+          prizeName: '牛肉粉丝',
+          prizePic: 'https://img.moushikeji.com/cdnn/temp_img/page/szy/szy/awards-nrfs.jpeg'
         },
-        {
-          prizeName: '金毛',
-          prizePic: require('@/static/img/dog.jpg')
+				{
+          prizeName: '芋泥啵啵',
+          prizePic: 'https://img.moushikeji.com/cdnn/temp_img/page/szy/szy/awards-ynbb.jpeg'
         },
-        {
-          prizeName: '傻狗',
-          prizePic: require('@/static/img/dog.jpg')
+				{
+          prizeName: '小蛋糕',
+          prizePic: 'https://img.moushikeji.com/cdnn/temp_img/page/szy/szy/awards-cake.jpeg'
         },
-        {
-          prizeName: '狗不理包子',
-          prizePic: require('@/static/img/bun.png')
-        }
-			];
+				{
+          prizeName: '麻辣烫',
+          prizePic: 'https://img.moushikeji.com/cdnn/temp_img/page/szy/szy/awards-mlt.jpeg'
+        },
+      ];
 			if (this.prizeList.length > 2 && (this.prizeList.length & 1) === 1) {
 				this.prizeBgColors = ['#FEDA04', '#FFF4B4', '#FFDCD7'];
 			}
