@@ -8,7 +8,7 @@
             <img :src="awardsInfo.prizePic" mode />
           </view>
           <view class="mainInfo">
-            <span>本次抽奖您获得</span>
+            <span>{{ title }}</span>
             <span class="light-font" v-if="awardsInfo.prizeType === 1">
               {{ awardsInfo.rewardScore }}
             </span>
@@ -17,7 +17,7 @@
             </span>
           </view>
           <view class="tips">
-            {{ awardsInfo.prizeType === 1 ? '*奖励将一小时内自动到账' : '*请在活动结束前领取' }}
+            {{ tips }}
           </view>
           <view class="modal-btn-2" @click="close">
             <img src="https://lyzh-fenhaola-manage.oss-cn-hangzhou.aliyuncs.com/images/applet/lottery/modal-btn-2.png" />
@@ -41,6 +41,16 @@
  */
 export default {
   name: 'modal-basic',
+  props: {
+    title: {
+      type: String,
+      default: '小轲茹中了'
+    },
+    tips: {
+      type: String,
+      default: '*请自觉吃抽中的食物'
+    }
+  },
   data() {
     return {
       type: '1',

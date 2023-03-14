@@ -10,9 +10,24 @@
 			"path": "pages/index/index",
 			"style": {
 				"navigationBarTitleText": "任轲茹的基地"
-			},
-			"usingComponents": {
-				"vue-big-wheel": "../../miniprogram_npm/vue-big-wheel"
+			}
+		},
+		{
+			"path": "pages/time/index",
+			"style": {
+				"navigationBarTitleText": "美好时光"
+			}
+		},
+		{
+			"path": "pages/lottery/index",
+			"style": {
+				"navigationBarTitleText": "这饭怎么吃"
+			}
+		},
+		{
+			"path": "pages/holiday/index",
+			"style": {
+				"navigationBarTitleText": "节日快乐"
 			}
 		}
 	],
@@ -21,5 +36,28 @@
 		"navigationBarTitleText": "任轲茹的基地",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#999",
+		"selectedColor": "#333",
+		"backgroundColor": "#ffffff",
+		"iconWidth": "20px",
+		"spacing": "6px",
+		"borderStyle": "white",
+		"height": "55px",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabbar/home.png",
+				"selectedIconPath": "static/tabbar/home-active.png",
+				"text": "基地首页"
+			},
+		  {
+				"pagePath": "pages/time/index",
+				"iconPath": "static/tabbar/mine.png",
+				"selectedIconPath": "static/tabbar/mine-active.png",
+				"text": "基地时光"
+			}
+		]
 	}
 }
