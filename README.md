@@ -63,8 +63,8 @@ proxy.$tracker.setUserId(userId);
 | 参数          | 说明                                                         | 类型   | 默认值                 | 平台差异
 | ------------- | ------------------------------------------------------------ | :------: | ---------------------- | ---- |
 | appid         | 应用Id                                                    | String | 无默认值，必填         |
-| platform      | 应用平台类型                                       | String | 'web'      | App不需要传，其余可传值参考[platform](#platform)
-| requestUrl    | SDK中全局请求接口前缀                                        | String | 'https://track.lyzhyun.com:18300'|
+| platform      | 应用平台类型                                       | String | web      | App不需要传，其余可传值参考[platform](#platform)
+| requestUrl    | SDK中全局请求接口前缀                                        | String | https://track.lyzhyun.com:18300 |
 | enableHistoryTracker | 是否启用全局history跳转埋点                           | Boolean  | false              | App不支持
 | enableHashTracker | 是否启用全局hash跳转埋点                                 | Boolean  | false              | App不支持
 | api   | SDK里用到的接口      | Object | { sendApi: '/api/track', bindApi: '/api/track/bind'}    | [api](#api)详细看下方
@@ -94,10 +94,7 @@ proxy.$tracker.setUserId(userId);
 | 方法名 | 说明         | 参数                              | 返回值 |
 | ------ | ------------ | --------------------------------- | ------ |
 | setUserId | 绑定用户Id | userId：作为用户的唯一标识 | -      |
-| sendTracker | 手动上传埋点 | function(eventId: string, data: Object, eventInfo: Object)<br />
-eventId: 事件名称<br />
-data: 作为这次埋点的数据一并上传<br />
-eventInfo：将被转为JSON字符串作为eventInfo的值上传 | -      |
+| sendTracker | 手动上传埋点 | function(eventId: string, data: Object, eventInfo: Object)<br />eventId: 事件名称<br />data: 作为这次埋点的数据一并上传<br />eventInfo：将被转为JSON字符串作为eventInfo的值上传 | -      |
 
 ## 开源协议
 ISC
